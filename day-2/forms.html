@@ -1,28 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <hr>
+    <h2>Input Fields</h2>
     <fieldset>
-        <legend>Personal Information</legend>
-        <form action="submit.html" method="post" target="_blank" autocomplete="off">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+      <legend>Personal Information</legend>
+      <form
+        action="submit.html"
+        method="post"
+        target="_blank"
+        autocomplete="off"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required /><br /><br />
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+        <label for="StreetAddress"> Street Address:</label>
+        <input
+          type="text"
+          id="StreetAddress"
+          name="StreetAddress"
+          maxlength="100"
+          size="40"
+          required
+        /><br /><br />
+        <label for="city"> City:</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          maxlength="50"
+          size="30"
+          placeholder="Manila City"
+          required
+        /><br /><br />
 
-        <input type="submit" value="Submit"></form>
-        </fieldset>
-        <fieldset><legend>Contact Information</legend>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone"><br><br>
-        </fieldset>
-</body>
+        <input type="submit" value="Submit" />
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" /><br /><br />
+    </fieldset>
+
+<h2>Select Boxes</h2>
+    <label for="fruit">Choose your favorite fruit:</label>
+<select name="fruit" id="fruit">
+  <option value="apple">Apple</option>
+  <option value="banana" selected>Banana</option>
+  <option value="orange" disabled>Orange</option>
+  <option value="grape">Grape</option>
+</select>
+<br>
+
+
+ <label for="country">Choose your Country:</label>
+<select name="Country" id="Country">
+<option value="Philippines" selected>Philippines</option>
+<option value="Korea">Korea</option>
+<option value="Japan">Japan</option>
+<option value="America">America</option>
+<select>
+    <br>
+ <label for="fruit">Choose your provider:</label>
+<select name="sms" id="sms"><option value="email">Email</option><option value="sms">SMS</option><option value="Phone">Phone</option></select>
+<br>
+ <label for="fruit">Choose your plan:</label>
+<select name="Subscription" id="Subscription"><option value="Basic">Basic</option><option value="Premium" selected>Premium</option><option value="VIP" disabled>VIP</option></select>
+<hr>
+<h2>Buttons</h2>
+<form action="submit.php">
+    <input type="text" id="name" required>   
+    <button type="submit" name="action" value="save">Save</button>
+    <button type="reset" name="action" value="delete">Delete</button> 
+    <button type="button" name="action" value="cancel">Cancel</button>
+
+</form>
+<form action="submit.php" method="get" target="_blank" autocomplete="off">
+    <input type="text" id="name" required>   
+    <button type="submit" name="action" value="submit">Submit</button>
+</form>
+<h3>Buttons/Form Validations</h3>
+<form action="submit.php" method="post" >
+    <label for="name">name</label>
+    <input type="text" id="name" required><br>
+    <br>
+    <label for="email">email</label>
+    <input type="email" id="email" required>   
+    <br>
+    <button type="submit" >Submit with validation</button>
+    <br>
+    <button type="submit" formnovalidate>submit without validation</button> 
+    
+
+</form>
+
+<form action="/register" method="post">
+    <label for="number1">Name:</label>
+    <input type="text" name="number1" required>
+    <br>
+      <label for="number2">Email:</label>
+    <input type="email" name="email" required>
+    <br>
+    <button type="submit">Submit</button>
+</form>
+  </body>
 </html>
