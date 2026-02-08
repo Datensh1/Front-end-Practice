@@ -1,0 +1,61 @@
+#HERO-SECTION {
+  height: 80vh;
+  color: black;
+  text-align: center;
+
+  width: 100%;
+}
+#HERO-SECTION h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+#HERO-SECTION p {
+  font-size: 1.25rem;
+}
+#FEATURED-ANIME {
+  padding: 2rem;
+  text-align: center;
+}
+#FEATURED-ANIME h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#FEATURED-ANIME p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.card-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 100%;
+  max-width: 300px;
+  min-height: 300px;
+  border: 1px solid black;
+  margin-top: 1rem;
+}
+.card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.card h3 {
+  font-size: 1.5rem;
+}
+.card p {
+  font-size: 1rem;
+}
+.card button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+#calltoaction {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}

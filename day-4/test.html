@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Demo</title>
+  <style>
+    /* Text size using rem */
+    h1 {
+      font-size: 2rem; /* big heading relative to root font size */
+      margin-bottom: 1rem;
+    }
+
+    /* Spacing (margin/padding) using rem */
+    .container {
+      padding: 2rem; /* padding around container */
+      margin: 1rem auto; /* margin outside container */
+      max-width: 800px;
+      background-color: #f0f0f0;
+    }
+
+    /* Full width image using % */
+    .full-width-image {
+      width: 100%; /* fill the container */
+      height: auto;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    /* Full screen section using vh */
+    .full-screen-section {
+      height: 50vh; /* half the viewport height */
+      background-color: #ffd6a5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    /* Fixed UI detail using px */
+    .icon {
+      width: 40px;  /* fixed size icon */
+      height: 40px;
+      background-color: #ff6b6b;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    /* Let content decide using auto */
+    .auto-box {
+      width: auto; /* let content decide width */
+      padding: 1rem;
+      background-color: #ffd6a5;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>CSS Units Demo</h1>
+
+    <!-- Full width image -->
+    <img src="https://via.placeholder.com/800x200" alt="Demo Image" class="full-width-image">
+
+    <!-- Full screen section -->
+    <div class="full-screen-section">
+      Full Screen Section (50vh)
+    </div>
+
+    <!-- Fixed UI detail -->
+    <div>
+      <span class="icon"></span>
+      <span class="icon"></span>
+      <span class="icon"></span>
+      Fixed Icons (40px each)
+    </div>
+
+    <!-- Let content decide -->
+    <div class="auto-box">
+      Auto Box: I decide my own width based on content!
+    </div>
+  </div>
+
+</body>
+</html>

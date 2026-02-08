@@ -1,0 +1,32 @@
+.profile-card {
+  width: 300px;
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 15px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+.profile-card.dashed{
+  border-style: dashed;
+}
+.profile-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.profile-card h2,
+p {
+  text-align: center;
+}
+/*Controlling Element Size: Width and Height Properties*/
+.container {
+  width: 500px; /* Define a width for the container */
+  height: 300px; /* Define a height for the container */
+  background-color: lightgray;
+}
+
+.box {
+  width: 50%;  /* 50% of the container's width (500px) = 250px */
+  height: 50%; /* 50% of the container's height (300px) = 150px */
+  background-color: lightblue;
+}
