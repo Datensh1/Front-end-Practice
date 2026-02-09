@@ -1,0 +1,49 @@
+header{display:flex;justify-content: space-between;align-items: center;padding: 1rem 2rem;}
+header nav ul{display:flex;gap: 10px;list-style: none;padding: 0;margin: 0;}
+aside{display:flex;flex-direction: column;padding: 1rem 2rem;width: 250px;flex-shrink: 0;}
+h2{font-size: 1.5rem;font-weight: bold;}
+h3{font-size: 1.2rem;font-weight: bold;}
+p{font-size: 1rem;color: #666;}
+.main-ctr{display:flex;gap: 10px;margin: 0;padding: 1rem 2rem;}
+.main-content{display:flex;flex-direction: column;gap: 10px;padding: 1rem 2rem;min-width: 0;justify-content: center;flex: 1;align-items: stretch;}
+.card-list{display: flex;gap: 10px;flex-wrap: wrap;justify-content: center;flex-direction: row;align-items: center;}
+.card{display: flex;flex-direction: column;gap: 10px;border: 1px solid black;padding: 1rem;border-radius: 10px;max-width: 300px;flex: 1 1 250px;justify-content: center;align-items: center;}
+.recent-activity{display: flex;border: 1px solid black;padding: 1rem;border-radius: 10px;width: 100%;
+    max-width: 800px;
+    flex: 1;margin: 0 auto;
+}
+footer{display:flex;justify-content: center;align-items: center;padding: 1rem 2rem;height: 80px;}
+@media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 1rem;
+    }
+  
+    header nav ul {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+    .main-ctr {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    aside {
+      width: 100%;
+    }
+  
+    .main-content {
+      padding: 0;
+    }
+  
+    .card-list {
+      justify-content: stretch;
+    }
+  
+    .card {
+      max-width: none;
+    }
+  }
+  
