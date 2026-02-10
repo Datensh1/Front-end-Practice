@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grid Placement</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        /* 3 rows */
+
+        gap: 3rem;
+        height: 60vh;
+        padding: 1rem;
+        background: #e5e7eb;
+      }
+      .nested-grid{display: grid;
+      grid-template-columns: repeat(3,2rem);
+      padding: 1rem;
+    gap: 2rem 1rem;}
+      .nested-item {
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        border-radius: 0.5rem;
+      }
+
+      .item {
+        background: #cbd5e1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="item item-1">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="nested-grid">
+        <div class="nested-item">Item 1</div>
+        <div class="nested-item">Item 2</div>
+        <div class="nested-item">Item 3</div>
+        <div class="nested-item">Item 1</div>
+        <div class="nested-item">Item 2</div>
+        <div class="nested-item">Item 3</div>
+      </div>
+    </div>
+  </body>
+</html>
