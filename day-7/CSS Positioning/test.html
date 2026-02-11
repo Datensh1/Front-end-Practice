@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static vs Sticky vs Fixed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+    }
+
+    /* FIXED: always stuck to the viewport */
+    .fixed-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 14px;
+      background: royalblue;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      z-index: 999;
+    }
+
+    /* Prevent content from hiding behind the fixed bar */
+    .top-spacer {
+      height: 52px;
+    }
+
+    .section {
+      padding: 20px;
+      height: 800px; /* makes scrolling obvious */
+      background: #f3f3f3;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .note {
+      margin: 10px 0 0;
+      color: #444;
+    }
+
+    /* STATIC: normal flow, scrolls away */
+    .static-bar {
+      position: static; /* default, just to be explicit */
+      padding: 14px;
+      background: #ffffff;
+      border: 2px solid #999;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    /* STICKY: normal until it reaches top:0, then sticks inside parent */
+    .sticky-wrapper {
+      padding: 20px;
+      height: 900px; /* important: parent must be tall so sticky has room */
+      background: #eaf7ee;
+      border-bottom: 2px solid #cfe9d6;
+    }
+
+    .sticky-bar {
+      position: sticky;
+      top: 52px; /* stick below the fixed bar so you can see both */
+      padding: 14px;
+      background: seagreen;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .filler {
+      margin-top: 20px;
+      height: 650px;
+      background: rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fixed-bar">🔵 FIXED: I stay on the screen forever</div>
+  <div class="top-spacer"></div>
+
+  <div class="section">
+    <h2>Section 1: Static example</h2>
+    <p class="note">Scroll down. The static box below will just scroll away like normal content.</p>
+
+    <div class="static-bar">⚪ STATIC (default): I scroll away normally</div>
+
+    <div class="filler">Keep scrolling ↓</div>
+  </div>
+
+  <div class="sticky-wrapper">
+    <h2>Section 2: Sticky example</h2>
+    <p class="note">
+      The green bar will scroll normally at first, then “stick” under the blue fixed bar.
+      When this green section ends, the sticky bar stops and scrolls away.
+    </p>
+
+    <div class="sticky-bar">🟢 STICKY: I stick only inside this green section</div>
+
+    <div class="filler">Scroll inside this section ↓</div>
+  </div>
+
+  <div class="section">
+    <h2>Section 3: End area</h2>
+    <p class="note">Notice: the green sticky bar is gone now (its parent ended), but the blue fixed bar is still here.</p>
+    <div class="filler">Done ✅</div>
+  </div>
+
+</body>
+</html>

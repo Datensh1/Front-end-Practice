@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Absolute Positioning - Relatively Positioned Ancestor</title>
+    <style>
+      #relative-container {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        background-color: lightblue;
+      }
+      #absolute-element1 {
+        position: absolute;
+        top: 20px;
+;
+        background-color: lightcoral;
+        padding: 10px;
+      }
+      #absolute-element2 {
+        position: absolute;
+ 
+        right: 20px;
+        background-color: lightgreen;
+        padding: 10px;
+      }
+      #absolute-element3 {
+        position: absolute;
+        bottom: 20px;
+     
+
+        background-color: lightyellow;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="relative-container">
+      <div id="absolute-element1">This element is absolutely positioned.</div>
+      <div id="absolute-element2">This element is absolutely positioned.</div>
+      <div id="absolute-element3">This element is absolutely positioned.</div>
+    </div>
+  </body>
+</html>

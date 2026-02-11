@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+}
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 1rem 2rem;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+    position: relative;
+}
+.card {
+  border: solid 1px black;
+  text-align: center;
+  padding: 1rem;
+
+}
+
