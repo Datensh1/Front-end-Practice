@@ -3,17 +3,19 @@ header {
   justify-content: flex-end;
   position: sticky;
   top: 0;
+    padding: 1rem 2rem;
 }
 header nav ul {
   display: flex;
   gap: 2rem;
   list-style-type: none;
   padding: 1rem 2rem;
+  margin: 0; 
 }
 .hero-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+min-height: 70vh;
   align-items: center;
   padding: 4rem 0;
 }
@@ -25,12 +27,24 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-    position: relative;
+  position: relative;
 }
 .card {
   border: solid 1px black;
   text-align: center;
   padding: 1rem;
-
+  position: relative;
 }
 
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff6b6b;
+  color: white;
+  
+  border-radius: 5px;
+   font-size: clamp(0.6rem, 1.5vw, 0.85rem);
+  padding: clamp(0.15rem, 0.6vw, 0.3rem) clamp(0.35rem, 1vw, 0.6rem);
+}
+.contact-btn{position: fixed; bottom: 2rem; right: 2rem;}

@@ -89,7 +89,8 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 10rem;
 
-  padding-top: 20rem;
+
+  padding-top: clamp(2rem, 6vw, 6rem); /* was 20rem */
   align-items: stretch;
 }
 .card {
@@ -105,8 +106,10 @@ padding: 4rem 2rem;
 .pricing-section {
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 2rem;
-padding-top: 20rem;
+  gap: 5rem;
+  padding: clamp(2rem, 6vw, 4rem) 0;
+   margin-top: 10rem;
+  padding-top: clamp(2rem, 6vw, 6rem); /* was 20rem */
 align-items: stretch;
 }
 .pricing {
@@ -167,18 +170,15 @@ footer p {
     color: aqua;
   }
   .card-ctr{    grid-template-columns: repeat(2, 1fr);}
-.pricing-section{  grid-template-columns: repeat(2,1fr);}
+.pricing-section{  grid-template-columns: repeat(2,1fr);  }
   .footer-content{  grid-template-columns: repeat(2,1fr);}
 }
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 600px) {
   .card-ctr {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+
   }
 
 .pricing-section{  grid-template-columns: repeat(1,1fr);}
