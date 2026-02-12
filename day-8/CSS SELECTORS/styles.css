@@ -1,0 +1,116 @@
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-accent);
+  border-bottom: solid 1px black;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh;
+padding: 1rem 2rem;
+  justify-content: center;
+  background-color: var(--color-card-bg);
+}
+.hero-section button {
+  margin-top: 1rem;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--color-accent);
+}
+.featured-section,
+.subscribe-section {
+  padding: 1rem 2rem;
+
+}
+.featured-section h2::before {
+  content: "----";
+  padding-right: 0.625rem;
+}
+
+.featured-section h2::after {
+  content: "----";
+  padding-left: 0.625rem;
+}
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.card {
+  border: solid 1px black;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: var(--color-card-bg);
+}
+button{cursor: pointer;}
+.card button {
+  margin-top: auto;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--color-accent);
+}
+
+
+.subscribe-section button {
+  margin-top: auto;
+}
+input[type="email"]{
+  border: 1px solid #999;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+input + button {
+  padding: 8px 16px;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+}
+button:hover {
+  background-color: var(--color-accent-dark);
+}
+
+footer {
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .card-list {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .featured-section h2{
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+  .featured-section h2{
+    text-align: center;
+  }
+}
