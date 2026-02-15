@@ -1,0 +1,26 @@
+/* ===============================
+   KISSA HANNA — Warm Matcha Minimal
+   =============================== */
+
+:root {
+  /* Backgrounds */
+  --color-bg: #F6F1E8;
+  --color-surface: #FFFFFF;
+  --color-muted-surface: #EFE9DD;
+
+  /* Text */
+  --color-text-primary: #2E2E2E;
+  --color-text-secondary: #5C5C5C;
+  --color-text-inverse: #FFFFFF;
+
+  /* Brand */
+  --color-primary: #7A9B76;
+  --color-primary-hover: #4F6B54;
+  --color-accent: #D8C4A3;
+
+  /* Borders */
+  --color-border: #E2D8C6;
+
+  /* Effects */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+}

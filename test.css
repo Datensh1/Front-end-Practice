@@ -1,0 +1,64 @@
+
+body{ padding: 0 clamp(1rem, 5vw, 5rem);}
+header{display: flex;  align-items: center; justify-content: space-between;}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+main section {
+  margin-top: 4rem;
+
+}
+main section h2{
+    font-size: 2rem;
+  
+}
+main section p{font-size: 1.2rem;}
+main section h3{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.container {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative; /* Needed for absolute positioning examples later */
+}
+
+.relative-element {
+  position: relative;
+
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.normal-element {
+  background-color: lightcoral;
+  padding: 10px;
+  position: absolute;
+    top: 20px;
+  left: 30px;
+}
+.container {
+  width: 600px;
+  border: 1px solid black;
+  overflow: auto; /* Contain the floats */
+}
+
+.column {
+  width: 48%; /* Slightly less than 50% to accommodate margin */
+  margin: 1%;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+

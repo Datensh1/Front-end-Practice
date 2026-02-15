@@ -5,24 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets\styles.css" />
+    <link rel="stylesheet" href="assets\theme\theme-deeper.css" />
   </head>
   <body>
-    <header>
-      <h1>Kissa Hana</h1>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li><a href="menu.html">Menu</a></li>
-          <li>About</li>
-          <li>Gallery</li>
-          <li>Reservations</li>
-          <li>Locations</li>
-          <li>FAQ</li>
-        </ul>
-      </nav>
-    </header>
+<header class="header">
+  <h1 class="header__brand">Kissa Hana</h1>
+
+  <input type="checkbox" id="nav-toggle" class="header__toggle" />
+  <label for="nav-toggle" class="header__burger" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+
     <main>
       <section class="hero-section">
+      
         <h1>A quiet Japanese café for slow sips and sweet bites</h1>
         <p>
           Hand-whisked matcha, small-batch desserts, and warm hospitality —
@@ -30,7 +42,7 @@
         </p>
         <div class="cta-ctr">
           <button class="primary-cta"><a href="menu.html">View the menu</a></button>
-          <button class="secondary-cta">Book a table</button>
+          <button class="secondary-cta"><a href="reservations.html">Book a table</a></button>
         </div>
       </section>
       <section class="highlights-strip-section">

@@ -1,0 +1,26 @@
+/* ===============================
+   KISSA HANNA — High-End Neutral
+   =============================== */
+
+:root {
+  /* Backgrounds */
+  --color-bg: #FAF8F4;
+  --color-surface: #FFFFFF;
+  --color-muted-surface: #F1ECE4;
+
+  /* Text */
+  --color-text-primary: #222222;
+  --color-text-secondary: #6B6B6B;
+  --color-text-inverse: #FFFFFF;
+
+  /* Brand */
+  --color-primary: #B8AFA3;
+  --color-primary-hover: #9E9487;
+  --color-accent: #E8DFD1;
+
+  /* Borders */
+  --color-border: #E5DED4;
+
+  /* Effects */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
