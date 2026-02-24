@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Kissa Hana</h1>
+      <p class="subtitle">Order Queue System</p>
+    </header>
+    <main>
+      <section class="counter_section">
+        <div class="dashboard_strip">
+          <div >
+            <h3 id="total_strip">Total Orders:</h3>
+          </div>
+          <div >
+            <h3 id="pending_strip">Pending:</h3>
+          </div>
+          <div class="served_strip">
+            <h3>Served:</h3>
+          </div>
+        </div>
+      </section>
+      <section class="input_section">
+        <input type="text" id="customer_name" placeholder="Eg: John Doe" />
+        <label for="drink_select">Select: Drink</label>
+        <select id="drink_select" name="drink">
+          <option value="Matcha">Matcha</option>
+          <option value="Latte">Latte</option>
+          <option value="Americano">Americano</option>
+          <option value="Hojicha">Hojicha</option>
+        </select>
+        <label for="size_select">Select: Size</label>
+        <select id="size_select" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+        <div class="btn_list">
+          <button id="add_order">Add Order</button>
+          <button id="reset_order">Reset List</button>
+      </section>
+      <section class="order_section">
+        <div class="card_ctr">
+    
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
